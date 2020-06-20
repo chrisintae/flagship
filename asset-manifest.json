@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0eb9afc2.chunk.css",
+    "main.js": "/static/js/main.b306ae75.chunk.js",
+    "main.js.map": "/static/js/main.b306ae75.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.df38f148.js",
+    "runtime-main.js.map": "/static/js/runtime-main.df38f148.js.map",
+    "static/js/2.3af05f94.chunk.js": "/static/js/2.3af05f94.chunk.js",
+    "static/js/2.3af05f94.chunk.js.map": "/static/js/2.3af05f94.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4fbb341f1227399708f028c47f32c236.js": "/precache-manifest.4fbb341f1227399708f028c47f32c236.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.0eb9afc2.chunk.css.map": "/static/css/main.0eb9afc2.chunk.css.map",
+    "static/js/2.3af05f94.chunk.js.LICENSE.txt": "/static/js/2.3af05f94.chunk.js.LICENSE.txt",
+    "static/media/snippets.scss": "/static/media/snippet-bg-markus-spiske-unsplash.b7f7eebe.jpg",
+    "static/media/work-athenahealth-epocrates.png": "/static/media/work-athenahealth-epocrates.744dd794.png",
+    "static/media/work-parkloco.png": "/static/media/work-parkloco.0a8be579.png",
+    "static/media/work-speak-easy-b.png": "/static/media/work-speak-easy-b.acc5a6ff.png",
+    "static/media/work-welo-app.jpg": "/static/media/work-welo-app.7f47ae01.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df38f148.js",
+    "static/js/2.3af05f94.chunk.js",
+    "static/css/main.0eb9afc2.chunk.css",
+    "static/js/main.b306ae75.chunk.js"
+  ]
+}
