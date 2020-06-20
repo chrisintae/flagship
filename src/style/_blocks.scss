@@ -1,0 +1,47 @@
+section {
+	padding: 80px 0;
+}
+
+.container {
+	max-width: $g-container;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+
+	&.two-col {
+		& > * {
+			width: 100%;
+		}
+	}
+}
+
+.section-title {
+	@include displayBlack;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	color: $dkgray;
+
+	&.lg {
+		font-size: 4.9rem;
+		line-height: 55px;
+
+		span {
+			display: block;
+		}
+	}
+
+	&.sm {
+		font-size: 1.75rem;
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.section-title.lg {
+		font-size: 7rem;
+		line-height: 78px;
+	}
+}

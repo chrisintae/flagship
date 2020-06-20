@@ -1,0 +1,22 @@
+@import '../config';
+
+.contact {
+	background-color: $bg-contact;
+
+	.section-title {
+		transform: scale(-1, 1);
+	}
+
+	h2 {
+		@include displayLight;
+		font-size: 1.25rem;
+		line-height: 1.75;
+		text-align: center;
+	}
+}
+
+.thanks {
+	.container {
+		text-align: center;
+	}
+}

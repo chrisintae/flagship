@@ -1,0 +1,123 @@
+{
+	"Preloader": [
+		{
+			"line1": "Something... Provacative... Memoriable",
+			"line2": "Like you high-school year book quote..."
+		}
+	],
+	"ExternalLinks": [
+		{
+			"name": "LinkedIn",
+			"url": "https://www.linkedin.com/in/chrisintae/",
+			"icon": ""
+		},
+		{
+			"name": "GitHub",
+			"url": "https://github.com/chrisintae",
+			"icon": ""
+		},
+		{
+			"name": "CodeSandbox",
+			"url": "https://codesandbox.io/u/chrisintae",
+			"icon": ""
+		},
+		{
+			"name": "Dribbble",
+			"url": "https://dribbble.com/ChrisIntae",
+			"icon": ""
+		}
+	],
+	"Hero": [
+		{
+			"title": "build cool shit"
+		}
+	],
+	"Experience": [
+		{
+			"companyName": "athenahealth",
+			"location": "Watertown, MA",
+			"position": "Staff Front-End Engineer",
+			"team": "CaaS Platform",
+			"duration": "2018 - Present"
+		},
+		{
+			"companyName": "athenahealth",
+			"location": "Watertown, MA",
+			"position": "Senior Front-End Engineer",
+			"team": "Web Team",
+			"duration": "2017 - 2018"
+		},
+		{
+			"companyName": "athenahealth",
+			"location": "Watertown, MA",
+			"position": "Senior UX Engineering Associate",
+			"team": "UX",
+			"duration": "2016 - 2017"
+		},
+		{
+			"companyName": "athenahealth",
+			"location": "Watertown, MA",
+			"position": "Interactive Designer",
+			"team": "Creative",
+			"duration": "2015 - 2016"
+		},
+		{
+			"companyName": "GBFB",
+			"location": "Boston, MA",
+			"position": "Web + Social Media Manager",
+			"team": "Marketing Communication",
+			"duration": "2013 - 2015"
+		},
+		{
+			"companyName": "MCLE",
+			"location": "Boston, MA",
+			"position": "Digital Marketing Production Associate",
+			"team": "Marketing",
+			"duration": "2013 - 2015"
+		}
+	],
+	"Checklist": [
+		{
+			"title": "Show Personality",
+			"desc": "Dumb, funny, provactive, or edge-y headline"
+		},
+		{
+			"title": "Hip Design Chops",
+			"desc": "Big text, abstract shapes, hover effects, modern, yet retro, yet trendy BS"
+		},
+		{
+			"title": "Strategic + tactical",
+			"desc": "A view, process, or belief on someting about anything"
+		},
+		{
+			"title": "Individual-Unique, Corporate-Team Player",
+			"desc": "Examples of following direction, even w/ always frustrating Brand or Marketing teams"
+		},
+		{
+			"title": "Still just a coder at heart... and mind",
+			"desc": "Express love for coding + learning new stuff (Deno worth it?)"
+		}
+	],
+	"Snippets": [
+		{
+			"sub": "React",
+			"title": "Forms w/ Formik + Yup",
+			"url": "https://codesandbox.io/s/react-formik-5ti1c"
+		},
+		{
+			"sub": "React",
+			"title": "Reusable Modal w/ Hooks",
+			"url": "https://codesandbox.io/s/gallery-w-modal-c03q7"
+		},
+		{
+			"sub": "React",
+			"title": "Hooks - useState + useEffect",
+			"url": "https://codesandbox.io/s/candy-5krkt"
+		},
+		{
+			"sub": "Vanilla",
+			"title": "Todo App",
+			"url": "https://codesandbox.io/s/to-do-app-ynbp7"
+		}
+	]
+}

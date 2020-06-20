@@ -1,0 +1,79 @@
+@import '../config';
+
+.checklist {
+	h5 {
+		text-align: center;
+	}
+	.checklist-container {
+		max-width: 500px;
+		text-align: left;
+		margin: 20px auto;
+
+		.checklist-item {
+			display: flex;
+			margin-bottom: 20px;
+
+			.check-circle {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				max-width: 30px;
+				height: 30px;
+				font-size: 10px;
+				background-color: $white;
+				border: 1px solid $coral;
+				border-radius: 50%;
+				transition: background-color .2s ease-in-out;
+				cursor: pointer;
+				margin-right: 20px;
+
+				span {
+					font-size: 1.25rem;
+				}
+			}
+
+			.strikeout {
+				position: relative;
+				color: #999999 !important;
+				text-decoration: line-through;
+				font-style: italic;
+
+				&::after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background: $ltgray;
+					animation-name: strikeout;
+					animation-duration: 1s;
+					animation-timing-function: linear;
+					animation-iteration-count: 1;
+					animation-fill-mode: forwards;
+				}
+			}
+
+			p {
+				@include displayLight;
+				font-size: 1.25rem;
+				line-height: 1.25;
+				color: $dkgray;
+
+				strong {
+					@include displayBold;
+				}
+			}
+		}
+	}
+}
+
+@keyframes strikeout {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}

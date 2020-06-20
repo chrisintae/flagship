@@ -1,0 +1,82 @@
+@import '../config';
+
+ul.experience-container {
+	li {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		color: $experience-text-color;
+		border-bottom: 1px solid $experience-border-color;
+		padding: 30px 20px;
+
+		&:hover {
+			background-color: $experience-hover-color;
+			color: $experience-hover-text-color;
+			border-color: $experience-border-hover-color;
+
+			h3,
+			p {
+				@include displayReg;
+			}
+		}
+
+		h3,
+		p {
+			@include displayLight;
+			font-size: 1.25rem;
+		}
+
+		h3 span {
+			display: block;
+		}
+	}
+}
+
+// ! Future Update
+/*
+.dl-resume-cta {
+	@include displayLight;
+	font-size: 1.25rem;
+	text-align: right;
+	padding: 30px 20px;
+}
+*/
+
+@media screen and (min-width: $tablet) {
+	.experience {
+		.container {
+			display: flex;
+			flex-direction: row;
+
+			.col-left {
+				width: 38%;
+			}
+
+			.col-right {
+				width: 62%;
+			}
+
+			ul.experience-container {
+				li {
+					flex-direction: row;
+
+					&:first-child {
+						border-top: 1px solid $experience-border-color;
+					}
+
+					& > *:nth-child(1) {
+						width: 24%;
+					}
+
+					& > *:nth-child(2) {
+						width: 56%;
+					}
+
+					h3 span {
+						display: unset;
+					}
+				}
+			}
+		}
+	}
+}

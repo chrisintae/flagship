@@ -1,0 +1,53 @@
+@import '../config';
+
+.work-item {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 30px;
+
+	p.work-number {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		right: 40%;
+		width: 50%;
+		height: 100%;
+		font-family: $displaySerif;
+		font-size: 20rem;
+		color: transparent;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 3px;
+		-webkit-text-stroke-color: black;
+	}
+	.work-desc {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: rgba(255, 255, 255, 0.5);
+			opacity: 0;
+			transition: all 0.2s ease-in-out;
+		}
+
+		.work-img-container {
+			@include box-shadow;
+
+			img {
+				width: 100%;
+				max-width: 720px;
+			}
+		}
+	}
+}
