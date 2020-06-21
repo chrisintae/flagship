@@ -2,6 +2,7 @@
 	"name": "flapship",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://chrisintae.github.io/flagship",
 	"dependencies": {
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.3.2",
