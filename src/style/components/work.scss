@@ -4,49 +4,133 @@
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 30px;
+	margin-bottom: 45px;
+
+	&:first-child {
+		margin-top: 30px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 
 	p.work-number {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		position: absolute;
-		right: 40%;
+		right: 62%;
 		width: 50%;
-		height: 100%;
 		font-family: $displaySerif;
-		font-size: 20rem;
+		font-size: 10rem;
 		color: transparent;
 		-webkit-text-fill-color: transparent;
-		-webkit-text-stroke-width: 3px;
+		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: black;
+		z-index: 1;
 	}
+
 	.work-desc {
 		display: flex;
 		justify-content: flex-end;
 		width: 100%;
 
-		.overlay {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			background-color: rgba(255, 255, 255, 0.5);
-			opacity: 0;
-			transition: all 0.2s ease-in-out;
-		}
-
 		.work-img-container {
-			@include box-shadow;
+			position: relative;
+
+			.work-overlay {
+				position: relative;
+				width: 100%;
+				max-width: 720px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				box-sizing: border-box;
+				background-color: transparent;
+				opacity: 1;
+				transition: all 0.2s ease-in-out;
+
+				h3 {
+					font-family: $serif;
+					font-size: 1.25rem;
+					letter-spacing: 1px;
+					color: $dkgray;
+				}
+
+				h2 span {
+					@include displayLight;
+					font-size: 1rem;
+					margin: 0 10px;
+				}
+
+				p a {
+					@include displayLight;
+					font-size: 1rem;
+					margin: 2px;
+					color: $black;
+				}
+			}
 
 			img {
 				width: 100%;
 				max-width: 720px;
+				@include box-shadow;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.work-item {
+		margin-bottom: 30px;
+
+		&:nth-child(1) {
+			margin-top: 30px;
+		}
+
+		p.work-number {
+			height: 100%;
+			font-size: 20rem;
+			-webkit-text-stroke-width: 3px;
+		}
+
+		.work-desc .work-img-container {
+			.work-overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				background-color: $white;
+				border: 0 solid $green;
+				opacity: 0;
+
+				h3 {
+					font-size: 2rem;
+				}
+
+				h2 span {
+					font-size: 1.25rem;
+					margin: 0 15px;
+				}
+
+				p a {
+					font-size: 1rem;
+					margin: 10px;
+				}
+			}
+
+			img {
+				width: 100%;
+				max-width: 720px;
+			}
+
+			&:hover {
+				.work-overlay {
+					opacity: 1;
+					border-width: 50px;
+					opacity: 1;
+				}
 			}
 		}
 	}

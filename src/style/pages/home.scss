@@ -1,55 +1,12 @@
 @import '../config';
 
-.hero-bg-container {
-	position: absolute;
-	top: 0;
-	z-index: -1;
-	width: 50%;
-	height: 100vh;
-	min-height: 550px;
-	max-height: 650px;
-	transform: skew(21deg);
-
-	&::before {
-		content: '';
-		position: absolute;
-		right: 10%;
-		width: 121%;
-		height: 100%;
-		background-color: $aqua;
-	}
-}
-
-@media screen and (min-width: $lg-desktop) {
-	.hero-bg-container {
-		&::before {
-			right: 8%;
-			width: 121%;
-			height: 116%;
-		}
-	}
-}
-
-.hero-text-container {
-	height: 95vh;
-	min-height: 550px;
-	max-height: 700px;
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: flex-end;
-
-	.container {
-		width: 100%;
-	}
-}
-
 .hero {
 	padding: 0;
 
 	h1 {
 		@include displayBlack;
-		font-size: 5rem;
+		font-size: 8rem;
+		line-height: 100px;
 		// text-transform: uppercase;
 		color: $hero-h1-color;
 		text-align: right;
@@ -72,24 +29,93 @@
 	}
 }
 
+.hero-bg-container {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	width: 50%;
+	height: 75vh;
+	min-height: 550px;
+	max-height: 650px;
+	transform: skew(21deg);
+
+	&::before {
+		content: '';
+		position: absolute;
+		right: 10%;
+		width: 121%;
+		height: 100%;
+		background-color: $aqua;
+	}
+}
+
+.hero-text-container {
+	height: 75vh;
+	min-height: 550px;
+	max-height: 700px;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: row;
+	justify-content: flex-end;
+
+	.container {
+		width: 100%;
+	}
+}
+
 @media screen and (min-width: $tablet) {
 	.hero {
 		h1 {
-			font-size: 15rem;
-			line-height: 170px;
+			font-size: 12rem;
+			line-height: 140px;
 			text-align: right;
 		}
+	}
+
+	.hero-text-container {
+		align-items: center;
+	}
+
+	.hero-bg-container,
+	.hero-text-container {
+		height: 95vh;
 	}
 }
 
 .methodology {
 	text-align: center;
 	color: $methodology-text-color;
+	padding: 60px 0;
 
 	h4 {
 		font-family: $serif;
 		font-size: 1.5rem;
 		line-height: 1.25;
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.methodology {
+		padding: 80px 0;
+	}
+}
+
+@media screen and (min-width: $lg-desktop) {
+	.hero {
+		h1 {
+			font-size: 15rem;
+			line-height: 170px;
+		}
+	}
+
+	.hero-bg-container {
+		height: 100vh;
+
+		&::before {
+			right: 8%;
+			width: 121%;
+			height: 116%;
+		}
 	}
 }
 
