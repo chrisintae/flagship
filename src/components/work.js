@@ -23,17 +23,21 @@ const Work = () => {
 					<div className='work-item'>
 						<p className='work-number'>01</p>
 						<div className='work-desc'>
-							<div className='overlay'>
-								<h2>athenahealth</h2>
-								<h2>
-									<span>Content as a Service (CaaS)</span>
-									<span>React</span>
-									<span>Drupal</span>
-								</h2>
-								<a href='http://www.athenahealth.com'>athenahealth</a> | <a href='http://www.epocrates.com'>epocrates</a> | <a href='http://www.athenahealth.com/knowledge-hub'>knowledge hub</a>
-							</div>
 							<div className='work-img-container'>
 								<img alt='Work - athenahealth + epocrates' src={ Img1 }/>
+
+
+								<div className='work-overlay'>
+									<h3>athenahealth</h3>
+									<h2>
+										<span>React</span>
+										<span>Drupal</span>
+										<span>CaaS</span>
+										<span>Headless CMS</span>
+									</h2>
+									<p>
+									<a href='http://www.athenahealth.com'>athenahealth</a> | <a href='http://www.epocrates.com'>epocrates</a> | <a href='http://www.athenahealth.com/knowledge-hub'>knowledge hub</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -41,13 +45,18 @@ const Work = () => {
 					<div className='work-item'>
 						<p className='work-number'>02</p>
 						<div className='work-desc'>
-							{/* <div className='overlay'>
-									<h2>Title of Work</h2>
-									<h4>Company Name</h4>
-									<a href='#'>Go to work</a>
-								</div> */}
 							<div className='work-img-container'>
 								<img alt='Project - Speak Easy B' src={ Img2 } />
+
+								<div className='work-overlay'>
+									<h3>Speak Easy B Movie</h3>
+									<h2>
+										<span>React</span>
+										<span>React Icons</span>
+									</h2>
+									<p>
+									<a href='http://www.athenahealth.com'>athenahealth</a> | <a href='http://www.epocrates.com'>epocrates</a> | <a href='http://www.athenahealth.com/knowledge-hub'>knowledge hub</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -55,13 +64,18 @@ const Work = () => {
 					<div className='work-item'>
 						<p className='work-number'>03</p>
 						<div className='work-desc'>
-							{/* <div className='overlay'>
-									<h2>Title of Work</h2>
-									<h4>Company Name</h4>
-									<a href='#'>Go to work</a>
-								</div> */}
 							<div className='work-img-container'>
 								<img alt='Woek - Parkloco Start Up' src={ Img3 } />
+
+								<div className='work-overlay'>
+									<h3>Parkloco</h3>
+									<h2>
+										<span>Product</span>
+										<span>Web Design</span>
+									</h2>
+									<p>
+									<a href='http://www.parkloco.com'>parkloco</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -69,13 +83,19 @@ const Work = () => {
 					<div className='work-item'>
 						<p className='work-number'>04</p>
 						<div className='work-desc'>
-							{/* <div className='overlay'>
-									<h2>Title of Work</h2>
-									<h4>Company Name</h4>
-									<a href='#'>Go to work</a>
-								</div> */}
 							<div className='work-img-container'>
 								<img alt='Project - Welo App Onboarding' src={ Img4 } />
+
+								<div className='work-overlay'>
+									<h3>Welo App</h3>
+									<h2>
+										<span>Design</span>
+										<span>User Flow</span>
+										<span>Onboarding</span>
+									</h2>
+									<p>
+									<a href='http://www.weloapp.io'>weloapp.io</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
