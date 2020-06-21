@@ -1,16 +1,86 @@
 @import './config';
 
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.tag {
+	// background: $white;
+	position: absolute;
+	top: -20px;
+	width: 100px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	border: 1px solid $teal;
+	@include box-shadow;
+	transform: rotate(-30deg);
+	padding: 25px 20px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		width: 100%;
+		height: 100%;
+		// background: $white;
+		border: 1px solid $orange;
+		z-index: -2;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: -20px;
+		left: -20px;
+		width: 100%;
+		height: 100%;
+		// background: $white;
+		border: 1px solid $coral;
+		z-index: -2;
+	}
+
+	a {
+		@include displayBlack;
+		font-size: 2rem;
+		line-height: 1;
+		text-decoration: none;
+		color: $dkgray;
+		mix-blend-mode: difference;
+
+		span {
+			position: absolute;
+			top: -2px;
+			display: block;
+			@include displayLight;
+			font-size: 2rem;
+			color: $white;
+			z-index: -1;
+		}
+	}
+
+	&:hover {
+		a {
+			color: $black;
+
+			& span {
+				color: $black;
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 768px) {
 	header {
-		position: fixed;
-		top: 0;
-		left: 0;
 		display: flex;
 		width: 100%;
 		@include displayLight;
 		font-size: 1rem;
 		background-color: $bg-header;
-		z-index: 1;
 		padding: 20px 0;
 
 		> div.container {
@@ -24,70 +94,7 @@
 	}
 
 	.tag {
-		// background: $white;
-		position: absolute;
 		top: 0;
-		width: 100px;
-		height: 80px;
-		display: flex;
-		align-items: center;
-		border: 1px solid $teal;
-		@include box-shadow;
-		transform: rotate(-30deg);
-		padding: 25px 20px;
-
-		&::before {
-			content: '';
-			position: absolute;
-			top: -10px;
-			left: -10px;
-			width: 100%;
-			height: 100%;
-			// background: $white;
-			border: 1px solid $orange;
-			z-index: -2;
-		}
-
-		&::after {
-			content: '';
-			position: absolute;
-			top: -20px;
-			left: -20px;
-			width: 100%;
-			height: 100%;
-			// background: $white;
-			border: 1px solid $coral;
-			z-index: -2;
-		}
-
-		a {
-			@include displayBlack;
-			font-size: 2rem;
-			line-height: 1;
-			text-decoration: none;
-			color: $dkgray;
-			mix-blend-mode: difference;
-
-			span {
-				position: absolute;
-				top: -2px;
-				display: block;
-				@include displayLight;
-				font-size: 2rem;
-				color: $white;
-				z-index: -1;
-			}
-		}
-
-		&:hover {
-			a {
-				color: $black;
-
-				& span {
-					color: $black;
-				}
-			}
-		}
 	}
 
 	nav ul li {
