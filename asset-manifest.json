@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/flagship/static/css/main.c84d9c47.chunk.css",
+    "main.css": "/flagship/static/css/main.e4513fc1.chunk.css",
     "main.js": "/flagship/static/js/main.b8ece7b7.chunk.js",
     "main.js.map": "/flagship/static/js/main.b8ece7b7.chunk.js.map",
     "runtime-main.js": "/flagship/static/js/runtime-main.cb74967d.js",
@@ -8,9 +8,9 @@
     "static/js/2.3af05f94.chunk.js": "/flagship/static/js/2.3af05f94.chunk.js",
     "static/js/2.3af05f94.chunk.js.map": "/flagship/static/js/2.3af05f94.chunk.js.map",
     "index.html": "/flagship/index.html",
-    "precache-manifest.334897e2892e5ed4cc49d718035d4493.js": "/flagship/precache-manifest.334897e2892e5ed4cc49d718035d4493.js",
+    "precache-manifest.c7f32802947a93d6c1d4f254b97c3c2c.js": "/flagship/precache-manifest.c7f32802947a93d6c1d4f254b97c3c2c.js",
     "service-worker.js": "/flagship/service-worker.js",
-    "static/css/main.c84d9c47.chunk.css.map": "/flagship/static/css/main.c84d9c47.chunk.css.map",
+    "static/css/main.e4513fc1.chunk.css.map": "/flagship/static/css/main.e4513fc1.chunk.css.map",
     "static/js/2.3af05f94.chunk.js.LICENSE.txt": "/flagship/static/js/2.3af05f94.chunk.js.LICENSE.txt",
     "static/media/snippets.scss": "/flagship/static/media/snippet-bg-markus-spiske-unsplash.b7f7eebe.jpg",
     "static/media/work-athenahealth-epocrates.png": "/flagship/static/media/work-athenahealth-epocrates.744dd794.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.cb74967d.js",
     "static/js/2.3af05f94.chunk.js",
-    "static/css/main.c84d9c47.chunk.css",
+    "static/css/main.e4513fc1.chunk.css",
     "static/js/main.b8ece7b7.chunk.js"
   ]
 }
